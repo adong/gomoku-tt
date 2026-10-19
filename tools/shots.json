@@ -1,0 +1,4 @@
+[
+  { "label": "prefs", "js": "localStorage.setItem('gomokuTT.v1', JSON.stringify({ size: 15 })); location.reload(); 'reload'", "wait": 4000 },
+  { "label": "title", "js": "game.hold(true); var d = game.G.demo; for (var i = 0; i < 400 && d.st.moves.length < 19 && !d.st.over; i++) game.step(0.25); game.step(0.6); 'demo stones ' + d.st.moves.length", "wait": 700, "shot": "screenshot" }
+]
